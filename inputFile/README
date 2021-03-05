@@ -1,0 +1,34 @@
+
+zcat Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.vcf.gz | grep "#" > arc.vcf.header
+
+zcat Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.vcf.gz | grep -v "#" | sed 's/_/\t/g' | awk 'OFS="\t" {out=$2+$4; $2=out; $3=$4="WTF"; print $0}' | sed 's/WTF\t//g' | cat arc.vcf.header - | bgzip -c > Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz
+
+tabix -p vcf Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz 
+
+python ~/bin/scripts/scripts_fromShavano/dadi_project/extract\ ancestral\ state/ancestralstate_chr_to_vcf.py ../../../../hsiehph/genomicData/humanHg38_chimpClint/dir_clint/ Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz stdout | bgzip -c > Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAA.vcf.gz
+
+tabix -p vcf Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAA.vcf.gz 
+
+
+python ~/bin/scripts/scripts_fromShavano/dadi_project/extract\ ancestral\ state/ancestralstate_chr_to_vcf.REFasAAifneeded.py ../../../../hsiehph/genomicData/humanHg38_chimpClint/dir_clint/ Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz stdout | bgzip -c > Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAAv2.vcf.gz
+
+tabix -p vcf Archaic.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAAv2.vcf.gz 
+
+
+
+zcat AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.vcf.gz | grep "#" > amh.vcf.header 
+
+zcat AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.vcf.gz | grep -v "#" | sed 's/_/\t/g' | awk 'OFS="\t" {out=$2+$4; $2=out; $3=$4="WTF"; print $0}' | sed 's/WTF\t//g' | cat amh.vcf.header - | bgzip -c > AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz
+
+tabix -p vcf AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz 
+
+python ~/bin/scripts/scripts_fromShavano/dadi_project/extract\ ancestral\ state/ancestralstate_chr_to_vcf.py ../../../../hsiehph/genomicData/humanHg38_chimpClint/dir_clint/ AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz stdout | bgzip -c > AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAA.vcf.gz
+
+tabix -p vcf AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAA.vcf.gz 
+
+
+python ~/bin/scripts/scripts_fromShavano/dadi_project/extract\ ancestral\ state/ancestralstate_chr_to_vcf.REFasAAifneeded.py ../../../../hsiehph/genomicData/humanHg38_chimpClint/dir_clint/ AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.vcf.gz stdout | bgzip -c > AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAAv2.vcf.gz
+
+tabix -p vcf AMH.regionsOfInterest.all.noINDEL.qual20.rmdups.ex38samples.rename.reorder.fakeContigNamePos.phased.hg38space.wAAv2.vcf.gz 
+
+

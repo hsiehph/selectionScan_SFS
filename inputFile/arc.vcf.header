@@ -1,0 +1,9 @@
+##fileformat=VCFv4.2
+##filedate=20200630
+##source="beagle.25Nov19.28d.jar"
+##INFO=<ID=AF,Number=A,Type=Float,Description="Estimated ALT Allele Frequencies">
+##INFO=<ID=DR2,Number=1,Type=Float,Description="Dosage R-Squared: estimated squared correlation between estimated REF dose [P(RA) + 2*P(RR)] and true REF dose">
+##INFO=<ID=IMP,Number=0,Type=Flag,Description="Imputed marker">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DS,Number=A,Type=Float,Description="estimated ALT dose [P(RA) + 2*P(AA)]">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NDL_Altai	NDL_Chagyrskaya	NDL_Vindija	DNS_Denisova

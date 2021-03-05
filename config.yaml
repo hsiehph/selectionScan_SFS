@@ -1,0 +1,79 @@
+---
+
+DIR_byteMap: /net/eichler/vol27/projects/human_diversity/nobackups/hsiehph/genomicData/bytearray_HapMapGenMapGRC38_exHDGPmyMask/
+
+
+list_suffix: ["statsIndvPop"]
+#list_suffix: ["statsFocalPop_txt", "MWUpbs_txt", "statsIndvPop_txt", "perSNVpbs_txt"]
+
+superPop:
+    AMH:
+        AFR: inputFile/AFR.shortIDs
+        AMR: inputFile/AMR.shortIDs
+        EAS: inputFile/EAS.shortIDs
+        EUR: inputFile/EUR.shortIDs
+        ME: inputFile/ME.shortIDs
+        MEL: inputFile/MEL.shortIDs
+        SAS: inputFile/SAS.shortIDs
+        SIB: inputFile/SIB.shortIDs
+    ARC:
+        NDL: inputFile/NDL.shortIDs
+        ARC: inputFile/ARC.shortIDs
+
+
+windowSize: 2000
+
+stepSize: 2000
+
+numBatch: 10
+
+list_numSamples_indicator: [1]
+
+
+VCF:
+    AMH:
+        chr1: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr1.myHGDPmask.wAA.vcf.gz
+        chr2: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr2.myHGDPmask.wAA.vcf.gz
+        chr3: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr3.myHGDPmask.wAA.vcf.gz
+        chr4: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr4.myHGDPmask.wAA.vcf.gz
+        chr5: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr5.myHGDPmask.wAA.vcf.gz
+        chr6: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr6.myHGDPmask.wAA.vcf.gz
+        chr7: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr7.myHGDPmask.wAA.vcf.gz
+        chr8: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr8.myHGDPmask.wAA.vcf.gz
+        chr9: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr9.myHGDPmask.wAA.vcf.gz
+        chr10: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr10.myHGDPmask.wAA.vcf.gz
+        chr11: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr11.myHGDPmask.wAA.vcf.gz
+        chr12: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr12.myHGDPmask.wAA.vcf.gz
+        chr13: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr13.myHGDPmask.wAA.vcf.gz
+        chr14: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr14.myHGDPmask.wAA.vcf.gz
+        chr15: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr15.myHGDPmask.wAA.vcf.gz
+        chr16: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr16.myHGDPmask.wAA.vcf.gz
+        chr17: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr17.myHGDPmask.wAA.vcf.gz
+        chr18: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr18.myHGDPmask.wAA.vcf.gz
+        chr19: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr19.myHGDPmask.wAA.vcf.gz
+        chr20: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr20.myHGDPmask.wAA.vcf.gz
+        chr21: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr21.myHGDPmask.wAA.vcf.gz
+        chr22: /net/eichler/vol27/projects/human_diversity/nobackups/HGDP_highCov/VCFs_bySangerInstitute_HardFilter/hgdp_wgs.20190516.full.chr22.myHGDPmask.wAA.vcf.gz 
+    ARC:
+        chr1: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr1.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr2: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr2.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr3: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr3.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr4: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr4.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr5: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr5.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr6: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr6.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr7: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr7.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr8: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr8.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr9: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr9.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr10: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr10.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr11: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr11.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr12: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr12.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr13: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr13.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr14: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr14.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr15: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr15.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr16: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr16.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr17: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr17.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr18: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr18.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr19: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr19.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr20: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr20.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr21: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr21.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
+        chr22: /net/eichler/vol27/projects/human_diversity/nobackups/1KG_highCov/snpAD_hg38wDecoy/final_mergedVCF_HGDPmask/chr22.snpAD.snpAD.myHGDPmask.reorder.wAA.vcf.gz
